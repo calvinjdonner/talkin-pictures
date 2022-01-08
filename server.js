@@ -14,13 +14,13 @@ const PORT = process.env.PORT || 3001;
 
 //setup session
 const sess = {
-    secret: 'supersecretsessionsecrettext',
-    cookie: { maxAge: 180000 },
-    resave: false,
-    saveUninitialized: true,
-    store: new SequelizeStore({
-        db: sequelize
-    })
+  secret: 'supersecretsessionsecrettext',
+  cookie: { maxAge: 180000},
+  resave: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db: sequelize
+  })
 };
 
 //handlebars initialization
@@ -38,5 +38,5 @@ app.use(session(sess));
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
-    app.listen(PORT, () => console.log(`Now Listening on ${PORT}`));
+  app.listen(PORT, () => console.log(`Now Listening on ${PORT}`));
 });

@@ -20,4 +20,9 @@ if (process.env.JAWSDB_URL) {
   );
 }
 
+if (err) {
+  console.log("there is a connection error");
+}
+
+
 module.exports = sequelize;

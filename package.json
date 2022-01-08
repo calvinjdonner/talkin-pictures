@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "app to review and find movies!",
   "main": "server.js",
+  "engines": {
+    "node": "14.17.x",
+    "npm": "6.14.x"
+  },
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.2",

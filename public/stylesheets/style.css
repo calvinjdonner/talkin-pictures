@@ -1,225 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
 * {
     box-sizing: border-box;
-  }
-  
-  body, html {
+}
+
+:root {
+    --charcoal: #264653ff;
+    --persian-green: #2a9d8fff;
+    --orange-yellow-crayola: #e9c46aff;
+    --sandy-brown: #f4a261ff;
+    --burnt-sienna: #e76f51ff;
+}
+
+body,
+html {
     height: 100%;
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
-    background-color: rgb(159, 191, 170);
-  }
-  
-  a {
+    font-family: 'Roboto Slab', serif;
+    background-color: var(--charcoal);
+}
+
+a {
     text-decoration: none;
-    color: rgb(159, 191, 170);
+    color: var(--persian-green);
     font-weight: bold;
     transition: color .1s;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     color: gray;
-  }
-  
-  header a:hover {
-   color:white; 
-  }
-  
-  .home-title {
+}
+
+header a:hover {
+    color: var(--burnt-sienna);
+}
+
+.home-title {
     font-size: 3rem;
-    color: rgb(41, 19, 6);
-    background-color: rgb(159, 191, 170);
+    color: var(--orange-yellow-crayola);
+    background-color: var(--charcoal);
     padding: 10px;
     display: inline-block;
     border-radius: 5px;
     box-shadow: 5px 7px lightgray;
-  }
-  
-  button {
-    background-color: rgb(41, 19, 6);
+}
+
+h2,
+label,
+h3 {
+    color: var(--orange-yellow-crayola)
+}
+
+button {
+    background-color: var(--orange-yellow-crayola);
     border: 0;
     padding: 1%;
-    color: rgb(159, 191, 170);
+    color: var(--persian-green);
     font-weight: bold;
     transition: background-color .1s;
     cursor: pointer;
     border-radius: 5px;
-  }
-  
-  button:hover {
-    background-color: lightsteelblue;
-  }
-  
-  .post-list {
+    font-family: 'Roboto Slab', serif;
+}
+
+button:hover {
+    background-color: var(--sandy-brown);
+}
+
+.post-list {
     margin: 0;
     padding: 0;
-    list-style: none;  
-  }
-  
-  
-  textarea, input {
+    list-style: none;
+}
+
+textarea,
+input {
     padding: .5%;
     border-radius: 5px;
     border: 1px solid #ccc;
-  }
-  
-  textarea:focus, input:focus {
+}
+
+textarea:focus,
+input:focus {
     outline: none;
-    border: 1px solid #3486eb;
-  }
-  
-  textarea {
+    border: 1px solid var(--charcoal);
+}
+
+textarea {
     min-width: 40%;
     min-height: 100px;
-  }
-  
-  form > div {
+}
+
+form>div {
     margin-bottom: 2%;
-  }
-  
-  form label {
+}
+
+form label {
     display: block;
-  }
-  
-  .wrapper {
+}
+
+.wrapper {
     width: 100%;
     min-height: 100%;
     margin: 0 auto;
     flex-direction: column;
-  }
-  
-  header {
-    background-color: rgb(41, 19, 6);
+}
+
+input,
+textarea {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+}
+
+header {
+    background-color: var(--orange-yellow-crayola);
     border-bottom: 1px solid #ccc;
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem 1rem 1rem;
     font-size: 1.5rem;
-  }
-  
-  header a {
-    color: rgb(159, 191, 170);
-    padding: .5rem;
-  }
-  
-  header h1 {
-    font-size: 1em;
-  }
+}
 
-  nav{
+header a {
+    color: var(--charcoal);
+    padding: .5rem;
+}
+
+header h1 {
+    font-size: 1em;
+}
+
+nav {
     padding: 1rem 0 .25rem 0;
-  }
-  
-  main {
-    background-color: rgb(159, 191, 170);
+}
+
+main {
+    background-color: var(--charcoal);
     margin: 0 auto;
     width: 90%;
-  }
-  
-  .btn-no-style {
+}
+
+.btn-no-style {
     background: none;
     border: none;
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: rgb(41, 19, 6);
+    color: var(--persian-green);
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
     margin-left: 16px;
-  }
-  
-  .btn-no-style:hover {
+}
+
+.btn-no-style:hover {
     background: none;
     color: #3486eb;
-  }
-  
-  .delete-post-btn {
+}
+
+.delete-post-btn {
     background-color: #d41414;
-  }
-  
-  .delete-post-btn:hover {
+}
+
+.delete-post-btn:hover {
     background-color: #ff643d;
-  }
-  
-  .post {
-    background-color: rgb(41, 19, 6);
+}
+
+.post {
+    background-color: var(--orange-yellow-crayola);
     margin: 1rem 0 1rem 0;
     line-height: 150%;
-    border-color: black;
+    border-color: var(--persian-green);
     border: solid;
-  }
-  
-  .post-head {  
+}
+
+.post-head {
     /* margin-bottom: 10px; */
     padding: 2px;
-  }
-  
-  .title {  
-    font-size: 150%;  
+}
+
+.title {
+    font-size: 150%;
     margin: 2px;
-    color: rgb(159, 191, 170);
-  }
-  
-  .meta {
+    color: var(--orange-yellow-crayola);
+}
+
+.meta {
     font-style: italic;
     font-size: 80%;
     margin: 2px;
     flex-direction: row;
-    color: rgb(159, 191, 170);
-  }
-  
-  .post-text {
-    background-color: rgb(159, 191, 170);
+    color: var(--charcoal);
+    font-weight: 600;
+}
+
+.post-text {
+    background-color: var(--orange-yellow-crayola);
     padding: .5rem;
-  }
-  
-  .edit-link {
+    color: var(--charcoal);
+    font-weight: 600;
+}
+
+.edit-link {
     display: block;
     margin: -1.5% 0 2% 0;
-  }
-  
-  .upvote-btn {
+}
+
+.upvote-btn {
     background-color: #197d0f;
     transition: background-color .1s;
-  }
-  
-  .upvote-btn:hover {
+}
+
+.upvote-btn:hover {
     background-color: #1f9c13;
-  }
-  
-  .comment-form {
+}
+
+.comment-form {
     margin-bottom: 5%;
-  }
-  
-  .comment {
+}
+
+.comment {
     padding: 1%;
     margin-bottom: 1%;
-  }
-  
-  .comment:nth-child(odd) {
-    background-color: rgb(41, 19, 6);
-    color:rgb(159, 191, 170);
-  }
-  
-  .comment .meta {
+}
+
+.comment:nth-child(odd) {
+    background-color: var(--orange-yellow-crayola);
+    padding: .5rem;
+    color: var(--charcoal);
+    font-weight: 600;
+}
+
+.comment .meta {
     font-size: 90%;
     margin-bottom: .5%;
     opacity: .6;
-  }
-  
-  .new-post-form input {
+}
+
+.new-post-form input {
     width: 300px;
-  }
-  
-  .edit-post-form {
+}
+
+.edit-post-form {
     margin-bottom: 5%;
-  }
-  
-  footer {
+}
+
+.posted {
+    color: var(--orange-yellow-crayola);
+}
+
+footer {
     border-top: 1px solid #ccc;
     display: flex;
     justify-content: center;
     padding: 1%;
     font-size: 110%;
-  }
+}

@@ -3,12 +3,16 @@
 
   <form class="new-post-form">
     <div>
-      <label for="post-title">Title</label>
-      <input type="text" id="post-title" name="post-title" />
+      <label for="post-title">Movie Title:</label>
+      <input type="text" id="post-title" name="post-title"placeholder="Home Alone" />
     </div>
     <div>
-      <label for="post-text">Post</label>
-      <textarea id="post-text" name="post-text"></textarea>
+      <label for="post-rating">Rating:</label>
+      <input type="number" id="post-rating" name="post-rating" placeholder="0 - 100" />
+    </div>
+    <div>
+      <label for="post-text">Post:</label>
+      <textarea id="post-text" name="post-text" placeholder="Terrible parents!"></textarea>
     </div>
     <button type="submit" class="btn">Create</button>
   </form>

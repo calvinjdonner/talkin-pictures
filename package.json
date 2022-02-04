@@ -1,5 +1,5 @@
 {
-  "name": "tech-blog",
+  "name": "talkin-pictures",
   "version": "1.0.0",
   "description": "Tech blog assignment",
   "main": "server.js",
@@ -7,16 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/calvinjdonner/tech-blog.git"
-  },
   "author": "calvin donner",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/calvinjdonner/tech-blog/issues"
+    "url": "https://github.com/calvinjdonner/talkin-pictures/issues"
   },
-  "homepage": "https://github.com/calvinjdonner/tech-blog#readme",
+  "homepage": "https://github.com/calvinjdonner/talkin-pictures#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.2",
